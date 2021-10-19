@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <header class="scoreboard">
+    <img class="LogoScore" src="images/logo.svg">
+    <div class="SBox">
+      <p class="SboxL">Score</p>
+      <p class="SboxS">0</p>
+    </div>
+  </header>
+
+  <main class="MainPage">
+    <article class="game-wrapper">
+      <button class="btn-paper"></button>
+      <button class="btn-rock"></button>
+      <button class="btn-scissors"></button>
+    </article>
+    <article class="result-wrapper">
+      <button class="player-selection"></button>
+      <p class="ResultsAvl ResultsPlayer">You Picked</p>
+      <div class="result-box">
+        <p class="game-result"></p>
+        <button class="btn-play-again">Play Again</button>
+      </div>
+      <div class="Loading"></div>
+      <button class="SelectedHouse"></button>
+      <p class="ResultsAvl ResultChosen">House Picked</p>
+    </article>
+  </main>
+
+  <footer class="FooterSec">
+    <button class="ResetButton">Reset</button>
+    <button class="RulesButton">Rules</button>
+    <div class="RulesSet">
+      <div class="RulesModCon">
+        <img class="RulesModClose" src="images/icon-close.svg">
+        <img class="RulesMod" src="images/image-rules.svg">
+      </div>
+    </div>
+ </footer>
+
+  <script src="scripts/RulesSet.js"></script>
+  <script src="scripts/MainCode.js"></script>
+</body>
+
+</html>

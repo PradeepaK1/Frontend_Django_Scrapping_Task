@@ -1,0 +1,43 @@
+@mixin result-btn-settings() {
+    align-self: center; 
+    transform: scale(1.4);
+    cursor: default;
+    outline: none;
+    pointer-events: none;
+}
+
+.result-wrapper {
+    @include content-wrapper(result-wrapper);
+    @include grid-box-settings(result-wrapper);
+}
+
+.ResultsAvl {
+    &--player {
+        grid-area: playerLabel;
+    }
+
+    &--house {
+        grid-area: houseLabel;
+    }
+}
+
+.result-box {
+    display: none;
+    grid-area: resultBox;
+    width: 100%;
+    max-width: 100%;
+}
+
+.game-result {
+    font-size: $font-size-large;
+}
+
+.player-selection {
+    @include result-btn-settings();
+    grid-area: playerSelection;
+}
+
+.SelectedHouse {
+    @include result-btn-settings();
+    grid-area: houseSelection;
+}

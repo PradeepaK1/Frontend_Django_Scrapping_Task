@@ -1,0 +1,142 @@
+.ResetButton {
+    @include for-size(large-phone) {
+        font-size: $font-size-medium;
+    }
+    @include for-size(desktop-laptop) {
+        font-size: $font-size-small;
+        order: 2;
+        margin-right: 2%;
+    }
+}
+
+.RulesButton {
+    @include for-size(large-phone) {
+        font-size: $font-size-medium;
+    }
+    @include for-size(desktop-laptop) {
+        font-size: $font-size-small;
+        order: 3;
+    }
+}
+
+.btn-play-again {
+    @include for-size(large-phone) {
+        margin-top: 8%;
+        font-size: $font-size-medium;
+    }
+    @include for-size(desktop-laptop) {
+        font-size: $font-size-base;
+    }
+}
+
+.scoreboard {
+    @include for-size(tablet-landscape) {
+        margin: 3% 5%;
+    }
+    @include for-size(desktop-laptop) {
+        width: 50%;
+        margin: 2% auto;
+        padding: 1% 2%;
+    }
+}
+
+.LogoScore {
+    @include for-size(ipad-tablet) {
+        width: auto;
+    }
+    @include for-size(desktop-laptop) {
+        width: 25%;
+    }
+}
+
+.SBox {
+    @include for-size(large-phone) {
+        &--label {
+            font-size: $font-size-medium;
+        }
+        &--score {
+            font-size: $font-size-xxlarge;
+        }
+    }
+    @include for-size(tablet-landscape) {
+        &--score {
+            font-size: $font-size-xlarge;
+        }
+    }
+    @include for-size(desktop-laptop) {
+        &--label {
+            font-size: $font-size-base;
+        }
+        &--score {
+            font-size: $font-size-xlarge;
+        }
+    }
+}
+
+.game-wrapper {
+    @include for-size(xsmall-phone) {
+        background-size: 70%;
+    }
+    @include for-size(iphone-x) {
+        background-size: 80%;
+    }
+    @include for-size(ipad-pro) {
+        background-size: 80%;
+    }
+    @include for-size(desktop-laptop) {
+        background-size: 50%;
+    }
+    @include for-size(large-desktop) {
+        background-size: 80%;
+    }
+}
+
+.ResultsAvl {
+    @include for-size(large-phone) {
+        font-size: $font-size-medium;
+    }
+    @include for-size(ipad-pro) {
+        font-size: $font-size-large;
+    }
+    @include for-size(desktop-laptop) {
+        font-size: $font-size-small;
+    }
+    @include for-size(large-desktop) {
+        font-size: $font-size-medium;
+    }
+}
+
+.game-result {
+    @include for-size(large-phone) {
+        font-size: $font-size-xlarge;
+    }
+}
+
+.FooterSec {
+    @include for-size(desktop-laptop) {
+        padding: 0 2%;
+    }
+}
+
+.attribution {
+    @include for-size(ipad-tablet) {
+        font-size: $font-size-base;
+    }
+    @include for-size(desktop-laptop) {
+        flex: 1;
+        align-self: center;
+        text-align: left;
+        margin-top: 0;
+        order: 1;
+        font-size: $font-size-xsmall;
+    }
+}
+
+.is-winner::before {
+    @include for-size(ipad-tablet) {
+        box-shadow:
+            0 0 0 30px rgba(255, 255, 255, 0.09),
+            0 0 0 70px rgba(255, 255, 255, 0.06),
+            0 0 0 120px rgba(255, 255, 255, 0.03);
+    }
+}

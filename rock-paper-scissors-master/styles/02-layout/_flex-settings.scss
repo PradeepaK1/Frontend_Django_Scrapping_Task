@@ -1,0 +1,14 @@
+@mixin flex-settings($element) {
+    display: flex;
+    justify-content: space-between;  
+
+    @if($element == 'FooterSec') {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @if($element == 'SBox') {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
